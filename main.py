@@ -1,6 +1,50 @@
 import discord
+import random
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+bot_key = os.environ.get("DISCORD_DA_BABY_KEY")
 
 client = discord.Client()
+
+triggers = [
+    "dababy", 
+    "da baby", 
+    "baby"
+    ]
+
+phrases = [
+    "LET\'S GO!",
+    "I needed some shit with some bop in it!",
+    "Woo!", 
+    "Yeah!",
+    "I got me a milli', I did it legit-ly!",
+    "You know it's Baby, nigga, hahaha",
+    "Go call my chauffeur, bitch, 'cause I don't like to drive!",
+    "I'm on front row at BET without my Glock!",
+    "Brand new Lamborghini, fuck a cop car!",
+    "I flew past the whip with that blunt in my mouth!",
+    "She wanna fuck with me, but I don't got the time!",
+    "Mmh, mmh",
+    "Oh Lord, Jetson made another one!",
+    "I'm a young CEO!",
+    "Ayy!", 
+    "Woo!",
+    "I'm goin’ baby on baby!",
+    "Told my bitch \"I love you\", that was just a typo",
+    "I'M DABABY",
+    "LESSSSS GOOOOO!!!!",
+    "DA BABY LESSS GOOO!",
+    "BABY ON BABY!",
+    "https://www.youtube.com/watch?v=Z6VfIfwp2zU",
+    "https://gossiponthis.com/wp-content/uploads/2018/11/da-baby.jpg",
+    "https://cache.umusic.com/_sites/officialdababy.com/images/OG.jpg",
+    "https://images.complex.com/complex/images/c_fill,g_center,w_1200/fl_lossy,pg_1/yae9bzxqqtr05isuebm7/dababy-smile-getty",
+    "https://guardian.ng/wp-content/uploads/2020/11/Da-Baby-1062x598.jpg",
+    "https://secureservercdn.net/184.168.47.225/d0e.a1c.myftpupload.com/wp-content/uploads/2020/03/images-21.jpg?time=1583776204"
+    ]
 
 @client.event
 async def on_ready():
@@ -8,22 +52,13 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    if message.author == client.user:
+    if (message.author == client.user) or (message.author.id == 159985870458322944):
         return
 
-    if "da baby" in message.content:
-        await message.channel.send('Let\'s Go!')
+    for i in range(len(triggers)):
+        if triggers[i] in message.content.lower():
+            await message.channel.send(random.choice(phrases))
+            return
 
-    if "Da baby" in message.content:
-        await message.channel.send('Let\'s Go!')
-    
-    if "Da Baby" in message.content:
-        await message.channel.send('Let\'s Go!')
 
-    if "da Baby" in message.content:
-        await message.channel.send('Let\'s Go!')
-
-    if "dababy" in message.content:
-        await message.channel.send('Let\'s Go!')
-
-client.run('ODIxODczNDY5NjE5OTYxOTE2.YFKDUA.NzDHznC648FcI3Qp1idDyp4biws')
+client.run(bot_key)
