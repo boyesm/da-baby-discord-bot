@@ -12,7 +12,7 @@ client = discord.Client()
 triggers = [
     "dababy", 
     "da baby", 
-    "baby"
+    "baby",
     ]
 
 phrases = [
@@ -21,7 +21,8 @@ phrases = [
     "Woo!", 
     "Yeah!",
     "I got me a milli', I did it legit-ly!",
-    "You know it's Baby, nigga, hahaha",
+    "You know it's Baby, hahaha",
+    "You know it's Baby",
     "Go call my chauffeur, bitch, 'cause I don't like to drive!",
     "I'm on front row at BET without my Glock!",
     "Brand new Lamborghini, fuck a cop car!",
@@ -30,15 +31,19 @@ phrases = [
     "Mmh, mmh",
     "Oh Lord, Jetson made another one!",
     "I'm a young CEO!",
-    "Ayy!", 
-    "Woo!",
+    "Ayy!",
     "I'm goin’ baby on baby!",
     "Told my bitch \"I love you\", that was just a typo",
     "I'M DABABY",
+    "LETSSS GOOO!",
+    "I'm YOUNG KIRK!",
+    "It's DaBaby, what you heard about me?",
+    "I'm in the rental truck sticked up like Walker Texas Ranger",
+    "This ain't no guitar, bitch, this a Glock",
+    "With the pistol on my hip like I'm a cop",
     "LESSSSS GOOOOO!!!!",
     "DA BABY LESSS GOOO!",
     "BABY ON BABY!",
-    "https://www.youtube.com/watch?v=Z6VfIfwp2zU",
     "https://gossiponthis.com/wp-content/uploads/2018/11/da-baby.jpg",
     "https://cache.umusic.com/_sites/officialdababy.com/images/OG.jpg",
     "https://images.complex.com/complex/images/c_fill,g_center,w_1200/fl_lossy,pg_1/yae9bzxqqtr05isuebm7/dababy-smile-getty",
