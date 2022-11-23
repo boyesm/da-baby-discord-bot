@@ -7,7 +7,7 @@ This is a simple discord bot that is activated by typing certain keywords in tex
 
 ## Usage
 
-### Add to your server
+### Add to your server [bot is currently down]
 
 If you have administrative permissions in your server, you can add it with this link:
 
